@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import {useSelector} from 'react-redux'
 
 function App() {
+
+  const state = useSelector((state) => state)
+
+  console.log(state) // returns the state inside the store, at the beginning account: 0, or on line 7 do state => state.account for just 0 for example
+    
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
     </div>
   );
 }
