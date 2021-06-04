@@ -7,3 +7,10 @@ export const depositMoney = amount => {
         payload: amount
     })
 }
+
+export const withdrawMoney = amount => {
+    return (dispatch) => ({
+        type: "withdraw", 
+        payload: amount
+    })
+}
